@@ -84,7 +84,7 @@ resource "aws_route_table_association" "secondary" {
   route_table_id = aws_route_table.rt.id
 }
 
-# Security Group for EC2
+# Security Group for EC
 resource "aws_security_group" "ec2" {
   name   = "movie-app-ec2-sg"
   vpc_id = aws_vpc.main.id
